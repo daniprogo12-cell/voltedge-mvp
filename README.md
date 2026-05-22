@@ -4,39 +4,7 @@ Projektet er struktureret efter tre DDD bounded contexts og et separat dashboard
 
 ## Struktur
 
-```text
-voltedge-mvp/
-├── telemetry_context/
-│   ├── main.py
-│   ├── routes.py
-│   ├── service.py
-│   ├── models.py
-│   └── repository.py
-├── health_context/
-│   ├── main.py
-│   ├── routes.py
-│   ├── service.py
-│   ├── models.py
-│   └── repository.py
-├── maintenance_context/
-│   ├── main.py
-│   ├── routes.py
-│   ├── service.py
-│   ├── models.py
-│   └── repository.py
-├── dashboard/
-│   ├── main.py
-│   └── templates/
-├── shared/
-│   ├── schemas.py
-│   ├── contracts.py
-│   └── utils.py
-├── data/
-│   ├── telemetry_store.json
-│   ├── health_store.json
-│   └── maintenance_store.json
-└── docker-compose.yml
-```
+
 
 ## Services
 

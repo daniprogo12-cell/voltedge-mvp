@@ -2,10 +2,10 @@
   "telemetry_readings": [],
   "health_snapshots": [
     {
-      "id": "925ded8c-2d7e-4b1b-ac67-3918e4f2ea95",
+      "id": "5ffe31ab-fb48-4150-ab7e-d0752b63a0bc",
       "charger_id": "CH-001",
-      "timestamp": "2026-05-22T17:23:13.207689Z",
-      "source_telemetry_id": "e9e3db9f-c6f9-45ee-981c-c94d6c29d682",
+      "timestamp": "2026-05-22T18:04:15.059362Z",
+      "source_telemetry_id": "24228fae-c999-41f9-b496-c3619f848340",
       "health_score": 100,
       "health_status": "healthy",
       "risk_level": "low",
@@ -13,10 +13,10 @@
       "recommendation_text": "No immediate action required."
     },
     {
-      "id": "f801013b-dbd3-4d8b-b4fc-aab49e9f11f6",
+      "id": "f87b89b7-53ee-46dc-b016-54a0d9182bf0",
       "charger_id": "CH-002",
-      "timestamp": "2026-05-22T17:23:13.296677Z",
-      "source_telemetry_id": "67c1c3f8-8bf1-4b5c-bdba-d8f51bb64319",
+      "timestamp": "2026-05-22T18:04:15.122098Z",
+      "source_telemetry_id": "d00bb58e-0e0c-4516-b98e-824d79c47042",
       "health_score": 100,
       "health_status": "healthy",
       "risk_level": "low",
@@ -24,10 +24,10 @@
       "recommendation_text": "No immediate action required."
     },
     {
-      "id": "0ba86859-fceb-4165-8954-a252bbf270aa",
+      "id": "56411440-16b8-4235-87c7-6bb5a718ce88",
       "charger_id": "CH-003",
-      "timestamp": "2026-05-22T17:23:13.346333Z",
-      "source_telemetry_id": "07174021-bc42-4bb5-bd3b-252987f61b33",
+      "timestamp": "2026-05-22T18:04:15.200349Z",
+      "source_telemetry_id": "0a9b02f5-152c-4e72-8cca-cef93fa2681f",
       "health_score": 65,
       "health_status": "degraded",
       "risk_level": "medium",
@@ -38,10 +38,10 @@
       "recommendation_text": "Monitor charger and schedule preventive maintenance if pattern continues."
     },
     {
-      "id": "35efbd34-a6da-43ce-9d33-f483c7473ab0",
+      "id": "05d09635-797b-4341-9732-02d2728c624a",
       "charger_id": "CH-004",
-      "timestamp": "2026-05-22T17:23:13.416394Z",
-      "source_telemetry_id": "9a74b385-0a97-4f14-a48f-363c73570f96",
+      "timestamp": "2026-05-22T18:04:15.302175Z",
+      "source_telemetry_id": "d03504fd-57ed-43a7-9a95-f56eb873840a",
       "health_score": 10,
       "health_status": "critical",
       "risk_level": "high",
@@ -53,10 +53,10 @@
       "recommendation_text": "Check network connection and charger heartbeat immediately."
     },
     {
-      "id": "ace7c73f-ae29-4759-bde1-791c94169cf8",
+      "id": "d0a461bf-79fc-4f1f-8711-4ddfd4eab531",
       "charger_id": "CH-004",
-      "timestamp": "2026-05-22T17:23:13.504387Z",
-      "source_telemetry_id": "57379a4c-eff6-4bec-a673-13f113809643",
+      "timestamp": "2026-05-22T18:04:15.400114Z",
+      "source_telemetry_id": "8f71724a-eac7-47fc-915b-8037023dc951",
       "health_score": 10,
       "health_status": "critical",
       "risk_level": "high",
@@ -68,10 +68,10 @@
       "recommendation_text": "Check network connection and charger heartbeat immediately."
     },
     {
-      "id": "60db8126-335a-447b-9904-e96b9d2d2fa1",
+      "id": "cb08318e-12a4-4568-8bbe-9aa282d2c544",
       "charger_id": "CH-004",
-      "timestamp": "2026-05-22T17:23:13.575319Z",
-      "source_telemetry_id": "c5b3f15c-4f86-4745-a225-4b55909b9a44",
+      "timestamp": "2026-05-22T18:04:15.494425Z",
+      "source_telemetry_id": "61679970-82c6-4ae6-9f4c-f09a746ed2b5",
       "health_score": 0,
       "health_status": "critical",
       "risk_level": "high",
@@ -87,46 +87,46 @@
   ],
   "anomalies": [
     {
-      "id": "6dd32f4b-a94a-4e84-b30b-fd14972c090b",
+      "id": "b69d8456-caac-4122-bd4a-f1a567e87c50",
       "charger_id": "CH-003",
-      "timestamp": "2026-05-22T17:23:13.351839Z",
-      "source_telemetry_id": "07174021-bc42-4bb5-bd3b-252987f61b33",
+      "timestamp": "2026-05-22T18:04:15.212418Z",
+      "source_telemetry_id": "0a9b02f5-152c-4e72-8cca-cef93fa2681f",
       "anomaly_type": "charging_without_power",
       "severity": "medium",
       "description": "Charger reports charging, but power is close to zero."
     },
     {
-      "id": "837ef8a7-755e-478b-9d81-6658fd658203",
+      "id": "46b29771-ab34-4e11-9a19-10e6adafe91b",
       "charger_id": "CH-004",
-      "timestamp": "2026-05-22T17:23:13.422331Z",
-      "source_telemetry_id": "9a74b385-0a97-4f14-a48f-363c73570f96",
+      "timestamp": "2026-05-22T18:04:15.309098Z",
+      "source_telemetry_id": "d03504fd-57ed-43a7-9a95-f56eb873840a",
       "anomaly_type": "heartbeat_missing",
       "severity": "high",
       "description": "Charger did not send heartbeat in latest telemetry reading."
     },
     {
-      "id": "36aa928b-c1c9-4147-b6f4-38845d5677c5",
+      "id": "91683abd-0c37-4604-8fcd-0299be376966",
       "charger_id": "CH-004",
-      "timestamp": "2026-05-22T17:23:13.508865Z",
-      "source_telemetry_id": "57379a4c-eff6-4bec-a673-13f113809643",
+      "timestamp": "2026-05-22T18:04:15.406822Z",
+      "source_telemetry_id": "8f71724a-eac7-47fc-915b-8037023dc951",
       "anomaly_type": "heartbeat_missing",
       "severity": "high",
       "description": "Charger did not send heartbeat in latest telemetry reading."
     },
     {
-      "id": "c49589ba-92b6-4a78-9d9c-06d314fd71d0",
+      "id": "dbe4cc7d-1c8a-4f24-a8bc-c296d4ee8f61",
       "charger_id": "CH-004",
-      "timestamp": "2026-05-22T17:23:13.580624Z",
-      "source_telemetry_id": "c5b3f15c-4f86-4745-a225-4b55909b9a44",
+      "timestamp": "2026-05-22T18:04:15.500489Z",
+      "source_telemetry_id": "61679970-82c6-4ae6-9f4c-f09a746ed2b5",
       "anomaly_type": "heartbeat_missing",
       "severity": "high",
       "description": "Charger did not send heartbeat in latest telemetry reading."
     },
     {
-      "id": "ccbf264a-1160-4918-8d7c-6608239ca00c",
+      "id": "f9546318-0a05-4883-ac0d-34451a9f6ec4",
       "charger_id": "CH-004",
-      "timestamp": "2026-05-22T17:23:13.580651Z",
-      "source_telemetry_id": "c5b3f15c-4f86-4745-a225-4b55909b9a44",
+      "timestamp": "2026-05-22T18:04:15.500520Z",
+      "source_telemetry_id": "61679970-82c6-4ae6-9f4c-f09a746ed2b5",
       "anomaly_type": "repeated_error_code",
       "severity": "high",
       "description": "Error code E_CONN_01 occurred 3 times in the latest readings."

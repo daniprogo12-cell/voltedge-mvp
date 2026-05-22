@@ -35,13 +35,13 @@ jobs:
         run: docker compose ps
 
       - name: Test Telemetry API
-        run: curl --fail http://localhost:8001/healthcheck
+        run: curl --fail http://localhost:8001/
 
       - name: Test Health API
-        run: curl --fail http://localhost:8002/healthcheck
+        run: curl --fail http://localhost:8002/
 
       - name: Test Maintenance API
-        run: curl --fail http://localhost:8003/healthcheck
+        run: curl --fail http://localhost:8003/
 
       - name: Test Dashboard
         run: curl --fail http://localhost:8004/dashboard
