@@ -1,0 +1,80 @@
+{
+  "telemetry_readings": [
+    {
+      "charger_id": "CH-001",
+      "connector_id": "1",
+      "timestamp": "2026-05-22T17:23:13.145540Z",
+      "status": "available",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": null,
+      "heartbeat": true,
+      "id": "e9e3db9f-c6f9-45ee-981c-c94d6c29d682"
+    },
+    {
+      "charger_id": "CH-002",
+      "connector_id": "1",
+      "timestamp": "2026-05-22T17:23:13.273196Z",
+      "status": "charging",
+      "power_kw": 11.2,
+      "voltage": null,
+      "current": null,
+      "error_code": null,
+      "heartbeat": true,
+      "id": "67c1c3f8-8bf1-4b5c-bdba-d8f51bb64319"
+    },
+    {
+      "charger_id": "CH-003",
+      "connector_id": "1",
+      "timestamp": "2026-05-22T17:23:13.323443Z",
+      "status": "charging",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": "E_POWER_01",
+      "heartbeat": true,
+      "id": "07174021-bc42-4bb5-bd3b-252987f61b33"
+    },
+    {
+      "charger_id": "CH-004",
+      "connector_id": "1",
+      "timestamp": "2026-05-22T17:23:13.392319Z",
+      "status": "offline",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": "E_CONN_01",
+      "heartbeat": false,
+      "id": "9a74b385-0a97-4f14-a48f-363c73570f96"
+    },
+    {
+      "charger_id": "CH-004",
+      "connector_id": "1",
+      "timestamp": "2026-05-22T17:23:13.483169Z",
+      "status": "offline",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": "E_CONN_01",
+      "heartbeat": false,
+      "id": "57379a4c-eff6-4bec-a673-13f113809643"
+    },
+    {
+      "charger_id": "CH-004",
+      "connector_id": "1",
+      "timestamp": "2026-05-22T17:23:13.553148Z",
+      "status": "faulted",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": "E_CONN_01",
+      "heartbeat": false,
+      "id": "c5b3f15c-4f86-4745-a225-4b55909b9a44"
+    }
+  ],
+  "health_snapshots": [],
+  "anomalies": [],
+  "maintenance_recommendations": [],
+  "incidents": []
+}

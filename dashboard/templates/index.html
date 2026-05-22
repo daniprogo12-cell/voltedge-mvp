@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoltEdge MVP Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; background: #f7f7f8; color: #1f2937; }
+    h1 { margin-bottom: 0; } .subtitle { color: #4b5563; margin-top: 6px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 24px 0; }
+    .card { background: white; border-radius: 12px; padding: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .card strong { display: block; font-size: 28px; margin-top: 8px; }
+    button { border: 0; padding: 10px 14px; border-radius: 8px; cursor: pointer; margin-right: 8px; background: #2563eb; color: white; }
+    button.secondary { background: #4b5563; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); margin-top: 14px; }
+    th, td { padding: 10px; border-bottom: 1px solid #e5e7eb; text-align: left; font-size: 14px; }
+    th { background: #eef2ff; }
+    .healthy, .low { color: #047857; font-weight: bold; } .degraded, .medium { color: #b45309; font-weight: bold; } .critical, .high { color: #b91c1c; font-weight: bold; }
+    code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
+    .context-label { font-size: 12px; color: #6b7280; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <h1>VoltEdge Charger Health MVP</h1>
+  <p class="subtitle">Dashboardet er kun visualisering. Det henter data fra Telemetry, Health og Maintenance API'erne.</p>
+  <p><button onclick="seed()">Indlæs demo-data</button><button class="secondary" onclick="resetData()">Nulstil JSON-data</button><button class="secondary" onclick="refresh()">Opdater dashboard</button></p>
+  <div class="cards">
+    <div class="card"><div class="context-label">Telemetry Service</div>Ladestandere<strong id="chargers">0</strong></div>
+    <div class="card"><div class="context-label">Health Service</div>Kritiske<strong id="critical">0</strong></div>
+    <div class="card"><div class="context-label">Maintenance Service</div>Anbefalinger<strong id="recommendations">0</strong></div>
+    <div class="card"><div class="context-label">Maintenance Service</div>Åbne incidents<strong id="incidents">0</strong></div>
+  </div>
+  <h2>Seneste telemetry</h2><table><thead><tr><th>Charger</th><th>Status</th><th>Power</th><th>Error Code</th><th>Heartbeat</th></tr></thead><tbody id="telemetryRows"></tbody></table>
+  <h2>Seneste health status</h2><table><thead><tr><th>Charger</th><th>Score</th><th>Status</th><th>Risk</th><th>Fault indicators</th><th>Recommendation</th></tr></thead><tbody id="healthRows"></tbody></table>
+  <h2>Maintenance recommendations</h2><table><thead><tr><th>Charger</th><th>Risk</th><th>Action</th><th>Reason</th><th>Status</th></tr></thead><tbody id="recommendationRows"></tbody></table>
+  <h2>Åbne incidents</h2><table><thead><tr><th>Charger</th><th>Severity</th><th>Status</th><th>Title</th><th>Description</th></tr></thead><tbody id="incidentRows"></tbody></table>
+<script>
+async function getJson(url, options) { const res = await fetch(url, options || {}); if (!res.ok) throw new Error(await res.text()); return await res.json(); }
+async function seed() { await getJson('/demo/seed', {method: 'POST'}); await refresh(); }
+async function resetData() { await getJson('/data/reset', {method: 'DELETE'}); await refresh(); }
+function cls(value) { value = String(value || '').toLowerCase(); if (value === 'critical' || value === 'high') return value; if (value === 'degraded' || value === 'medium') return value; return value === 'low' ? 'low' : 'healthy'; }
+async function refresh() {
+  const telemetry = await getJson('/api/telemetry'); const health = await getJson('/api/health/latest'); const incidents = await getJson('/api/incidents?status=open'); const recs = await getJson('/api/recommendations');
+  const chargerIds = [...new Set(telemetry.map(t => t.charger_id))];
+  document.getElementById('chargers').textContent = chargerIds.length;
+  document.getElementById('critical').textContent = health.filter(h => h.health_status === 'critical').length;
+  document.getElementById('recommendations').textContent = recs.length;
+  document.getElementById('incidents').textContent = incidents.length;
+  document.getElementById('telemetryRows').innerHTML = telemetry.map(t => `<tr><td><code>${t.charger_id}</code></td><td class="${cls(t.status)}">${t.status}</td><td>${t.power_kw} kW</td><td>${t.error_code || 'None'}</td><td>${t.heartbeat}</td></tr>`).join('');
+  document.getElementById('healthRows').innerHTML = health.map(h => `<tr><td><code>${h.charger_id}</code></td><td>${h.health_score}</td><td class="${cls(h.health_status)}">${h.health_status}</td><td class="${cls(h.risk_level)}">${h.risk_level}</td><td>${(h.fault_indicators || []).join(', ')}</td><td>${h.recommendation_text}</td></tr>`).join('');
+  document.getElementById('recommendationRows').innerHTML = recs.map(r => `<tr><td><code>${r.charger_id}</code></td><td class="${cls(r.risk_level)}">${r.risk_level}</td><td>${r.action}</td><td>${r.reason}</td><td>${r.status}</td></tr>`).join('');
+  document.getElementById('incidentRows').innerHTML = incidents.map(i => `<tr><td><code>${i.charger_id}</code></td><td class="${cls(i.severity)}">${i.severity}</td><td>${i.status}</td><td>${i.title}</td><td>${i.description}</td></tr>`).join('');
+}
+refresh();
+</script>
+</body>
+</html>

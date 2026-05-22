@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime data
+data/*.tmp
+data/runtime_*.json
+
+# Keep initial JSON store files in git
+!data/telemetry_store.json
+!data/health_store.json
+!data/maintenance_store.json

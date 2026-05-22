@@ -1,0 +1,67 @@
+services:
+  telemetry-api:
+    build: .
+    container_name: voltedge-telemetry-api
+    command: uvicorn telemetry_context.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - PYTHONPATH=/app
+      - JSON_STORE_PATH=/app/data/telemetry_store.json
+      - HEALTH_API_URL=http://health-api:8000
+    volumes:
+      - ./telemetry_context:/app/telemetry_context
+      - ./shared:/app/shared
+      - ./data:/app/data
+    ports:
+      - "8001:8000"
+    depends_on:
+      - health-api
+
+  health-api:
+    build: .
+    container_name: voltedge-health-api
+    command: uvicorn health_context.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - PYTHONPATH=/app
+      - JSON_STORE_PATH=/app/data/health_store.json
+      - MAINTENANCE_API_URL=http://maintenance-api:8000
+    volumes:
+      - ./health_context:/app/health_context
+      - ./shared:/app/shared
+      - ./data:/app/data
+    ports:
+      - "8002:8000"
+    depends_on:
+      - maintenance-api
+
+  maintenance-api:
+    build: .
+    container_name: voltedge-maintenance-api
+    command: uvicorn maintenance_context.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - PYTHONPATH=/app
+      - JSON_STORE_PATH=/app/data/maintenance_store.json
+    volumes:
+      - ./maintenance_context:/app/maintenance_context
+      - ./shared:/app/shared
+      - ./data:/app/data
+    ports:
+      - "8003:8000"
+
+  dashboard:
+    build: .
+    container_name: voltedge-dashboard
+    command: uvicorn dashboard.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - PYTHONPATH=/app
+      - TELEMETRY_API_URL=http://telemetry-api:8000
+      - HEALTH_API_URL=http://health-api:8000
+      - MAINTENANCE_API_URL=http://maintenance-api:8000
+    volumes:
+      - ./dashboard:/app/dashboard
+      - ./shared:/app/shared
+    ports:
+      - "8004:8000"
+    depends_on:
+      - telemetry-api
+      - health-api
+      - maintenance-api
