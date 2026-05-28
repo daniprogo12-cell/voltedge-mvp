@@ -1,0 +1,60 @@
+{
+  "telemetry_readings": [],
+  "health_snapshots": [],
+  "anomalies": [],
+  "maintenance_recommendations": [
+    {
+      "id": "5e60e22c-ffb7-4130-b794-a78548dfaa64",
+      "charger_id": "CH-003",
+      "timestamp": "2026-05-22T18:04:15.247863Z",
+      "source_health_snapshot_id": "56411440-16b8-4235-87c7-6bb5a718ce88",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: charging_without_power",
+      "status": "open"
+    },
+    {
+      "id": "d7be24bc-d95c-4688-a88e-9e2240a5fd54",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-22T18:04:15.330410Z",
+      "source_health_snapshot_id": "05d09635-797b-4341-9732-02d2728c624a",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Check network connection and charger heartbeat immediately. Detected anomalies: heartbeat_missing",
+      "status": "open"
+    },
+    {
+      "id": "15c599d3-aceb-40ec-b02f-fe5ea25636cd",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-22T18:04:15.434264Z",
+      "source_health_snapshot_id": "d0a461bf-79fc-4f1f-8711-4ddfd4eab531",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Check network connection and charger heartbeat immediately. Detected anomalies: heartbeat_missing",
+      "status": "open"
+    },
+    {
+      "id": "af494b23-aa70-42f9-bf6a-cc508a1ea291",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-22T18:04:15.535252Z",
+      "source_health_snapshot_id": "cb08318e-12a4-4568-8bbe-9aa282d2c544",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Check network connection and charger heartbeat immediately. Detected anomalies: heartbeat_missing, repeated_error_code",
+      "status": "open"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "d5724fb1-6bff-432d-aaaa-65573181db40",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-22T18:04:15.346451Z",
+      "source_health_snapshot_id": "05d09635-797b-4341-9732-02d2728c624a",
+      "severity": "high",
+      "status": "open",
+      "title": "Critical charger health detected for CH-004",
+      "description": "Check network connection and charger heartbeat immediately.",
+      "resolved_at": null
+    }
+  ]
+}

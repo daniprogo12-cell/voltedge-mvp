@@ -1,0 +1,13 @@
+Dataanalyse og predictive maintenance
+
+For at demonstrere hvordan MVP’ens data kan anvendes til mere avanceret analyse, opstilles en simpel machine learning-prototype baseret på lineær regression. Ideen er, at VoltEdge over tid kan opsamle ét års historiske driftsdata fra ladestandere og bruge disse data til at identificere mønstre, der indikerer øget risiko for fremtidige driftsproblemer.
+
+I MVP’en findes allerede de centrale datatyper, der kan danne grundlag for analysen: telemetrimålinger, health snapshots, anomalies, maintenance recommendations og incidents. Disse data kan samles pr. ladestander og pr. tidsperiode, eksempelvis månedligt, så der skabes et datasæt med features som gennemsnitlig health score, antal fejl, antal offline-hændelser, manglende heartbeats, antal anomalies og tidligere incidents.
+
+Den simple lineære regressionsmodel anvendes til at forudsige antallet af forventede incidents for en ladestander i den kommende periode, eksempelvis de næste 30 dage. Target-variablen er derfor incident_count_next_30_days, mens inputvariablerne er historiske driftsindikatorer fra MVP’ens datamodel. Formålet er ikke at erstatte driftsteamets vurdering, men at give et ekstra datadrevet beslutningsgrundlag for prioritering af proaktiv vedligeholdelse.
+
+Det første diagram viser sammenhængen mellem faktiske og forudsagte incidents i testperioden. Jo tættere punkterne ligger på diagonalen, desto bedre rammer modellen de faktiske observationer. Diagrammet bruges derfor til at vurdere, om modellen har lært en meningsfuld sammenhæng mellem historiske fejlindikatorer og fremtidige incidents.
+
+Det andet diagram rangerer ladestanderne efter modellens forudsagte incident-risiko i den seneste måned. Denne visualisering kan bruges operationelt af VoltEdges driftsteam til at prioritere de ladestandere, der bør undersøges først. Dermed omsættes dataanalyse direkte til handling i form af predictive maintenance.
+
+I denne prototype anvendes et syntetisk datasæt, fordi MVP’en endnu ikke indeholder ét års reelle produktionsdata. Modellen viser derfor ikke en færdig produktionsklar ML-løsning, men demonstrerer hvordan MVP’ens datamodel og historiske driftsdata kan danne grundlag for en fremtidig predictive maintenance-løsning.

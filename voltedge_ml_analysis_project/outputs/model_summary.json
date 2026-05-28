@@ -1,0 +1,57 @@
+{
+  "model": "Linear regression using numpy least squares",
+  "target": "incident_count_next_30_days",
+  "features": [
+    "avg_health_score",
+    "error_count",
+    "offline_events",
+    "missing_heartbeat_count",
+    "avg_power_kw",
+    "anomaly_count",
+    "previous_incidents"
+  ],
+  "training_data": "data\\simulated_yearly_charger_data.csv",
+  "current_store_files": [
+    "data\\telemetry_store.json",
+    "data\\health_store.json",
+    "data\\maintenance_store.json"
+  ],
+  "historical_test_metrics": {
+    "mae": 0.81,
+    "rmse": 0.987
+  },
+  "current_store_record_counts": {
+    "telemetry_readings": 144,
+    "health_snapshots": 144,
+    "anomalies": 51,
+    "maintenance_recommendations": 68,
+    "incidents": 10
+  },
+  "current_top_risk_charger": {
+    "month": "2026-05-01",
+    "charger_id": "CH-004",
+    "telemetry_count": 36,
+    "avg_health_score": 34.33,
+    "error_count": 13,
+    "offline_events": 8,
+    "missing_heartbeat_count": 10,
+    "avg_power_kw": 4.15,
+    "anomaly_count": 38,
+    "previous_incidents": 6,
+    "predicted_incidents_next_30_days": 4.23,
+    "ml_risk_category": "high",
+    "operational_risk_score": 100.0,
+    "operational_risk_category": "high"
+  },
+  "coefficients_standardized": {
+    "intercept": 0.8981,
+    "avg_health_score": 0.3521,
+    "error_count": 0.1602,
+    "offline_events": 0.1349,
+    "missing_heartbeat_count": 0.0942,
+    "avg_power_kw": -0.0722,
+    "anomaly_count": 0.2859,
+    "previous_incidents": 0.1323
+  },
+  "important_note": "The model is trained on synthetic historical demo data. The supplied JSON store files are used as the current snapshot for scoring, not as a statistically sufficient training dataset."
+}

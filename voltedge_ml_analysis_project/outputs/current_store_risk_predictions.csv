@@ -1,0 +1,5 @@
+month,charger_id,telemetry_count,avg_health_score,error_count,offline_events,missing_heartbeat_count,avg_power_kw,anomaly_count,previous_incidents,predicted_incidents_next_30_days,ml_risk_category,operational_risk_score,operational_risk_category
+2026-05-01,CH-004,36,34.33,13,8,10,4.15,38,6,4.23,high,100.0,high
+2026-05-01,CH-003,36,64.42,4,3,5,10.43,12,4,1.61,high,100.0,high
+2026-05-01,CH-001,36,95.36,0,0,1,8.26,1,0,0.28,low,34.64,low
+2026-05-01,CH-002,36,93.94,0,0,0,10.98,0,0,0.08,low,6.06,low

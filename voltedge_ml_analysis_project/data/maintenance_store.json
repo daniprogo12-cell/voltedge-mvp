@@ -1,0 +1,799 @@
+{
+  "telemetry_readings": [],
+  "health_snapshots": [],
+  "anomalies": [],
+  "maintenance_recommendations": [
+    {
+      "id": "bbcdec7d-3bcb-45a6-a080-50835aaf4ff1",
+      "charger_id": "CH-003",
+      "timestamp": "2025-06-14T19:18:21Z",
+      "source_health_snapshot_id": "1438547c-333f-4dd1-b0e7-3b94548a443a",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: error_code:E_TEMP_01",
+      "status": "open"
+    },
+    {
+      "id": "95bc02f5-adf6-4435-a1eb-195a31e01c2d",
+      "charger_id": "CH-003",
+      "timestamp": "2025-06-24T14:48:35Z",
+      "source_health_snapshot_id": "86a92a07-06c3-4973-a797-ae88bff29e65",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "4ba00426-9d82-4a45-a5f7-1a66bb56b34d",
+      "charger_id": "CH-004",
+      "timestamp": "2025-06-04T19:39:23Z",
+      "source_health_snapshot_id": "21057fd8-23a2-45a8-bab8-9cedaaec9357",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: error_code:E_POWER_01",
+      "status": "closed"
+    },
+    {
+      "id": "e13b360a-9a21-446f-b501-e380496e3d24",
+      "charger_id": "CH-004",
+      "timestamp": "2025-06-15T14:08:12Z",
+      "source_health_snapshot_id": "5a4bf1bd-4382-4b27-9678-cd600a01a031",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: missing_heartbeat",
+      "status": "closed"
+    },
+    {
+      "id": "99550cee-e18c-42db-a632-f50b3c90b8e1",
+      "charger_id": "CH-004",
+      "timestamp": "2025-06-25T10:10:11Z",
+      "source_health_snapshot_id": "ed43bc24-7e7d-4bf5-ac7a-445f24538bc4",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "91b77060-f494-4350-8295-2247b683a43b",
+      "charger_id": "CH-003",
+      "timestamp": "2025-07-04T07:04:35Z",
+      "source_health_snapshot_id": "8885a095-c7b6-4c8c-9822-37a4a07b88e6",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "b38262af-7d57-4296-8730-9eb76550622e",
+      "charger_id": "CH-004",
+      "timestamp": "2025-07-02T07:55:19Z",
+      "source_health_snapshot_id": "8ae20f69-50b2-4232-ab52-0c3b554865b7",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "9175aa0a-c4fd-4ea9-9ef0-16826bd9bd8b",
+      "charger_id": "CH-004",
+      "timestamp": "2025-07-15T14:59:40Z",
+      "source_health_snapshot_id": "7ebd49bb-5004-44d9-a9e5-a3cf653790ba",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "58197aa8-24ce-4afa-9e12-907ce0777207",
+      "charger_id": "CH-004",
+      "timestamp": "2025-07-24T07:34:58Z",
+      "source_health_snapshot_id": "ee1124a8-0d99-492f-bf2e-4c464df0c1d0",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "13732380-e983-4465-b353-e490c1eddf78",
+      "charger_id": "CH-003",
+      "timestamp": "2025-08-13T10:02:01Z",
+      "source_health_snapshot_id": "e5c6b49c-7981-43d6-b339-58b291684423",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "6626a4ba-3324-43c9-a6c9-f4db96006f11",
+      "charger_id": "CH-004",
+      "timestamp": "2025-08-04T10:17:07Z",
+      "source_health_snapshot_id": "f3afff48-9df2-4e7e-834d-7bca9c5bafd9",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: error_code:E_TEMP_02",
+      "status": "open"
+    },
+    {
+      "id": "70df3ce4-40f5-4ff3-98b3-4a340ef4251c",
+      "charger_id": "CH-004",
+      "timestamp": "2025-08-14T14:42:52Z",
+      "source_health_snapshot_id": "d95376e5-184d-42ad-a07c-c5f29d7c5cf1",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "1d034475-c1b2-49ef-b9eb-47c04e010209",
+      "charger_id": "CH-004",
+      "timestamp": "2025-08-26T10:40:09Z",
+      "source_health_snapshot_id": "bf500511-3b23-4618-b08d-b1bbc7969d1a",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "007043ff-67fe-42d9-adc9-0a7d93a7f375",
+      "charger_id": "CH-003",
+      "timestamp": "2025-09-02T10:25:04Z",
+      "source_health_snapshot_id": "9441c213-43a1-4b6d-9d8e-7352c4094091",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "87062788-eec7-4494-b67f-e394093a1da6",
+      "charger_id": "CH-003",
+      "timestamp": "2025-09-15T07:55:34Z",
+      "source_health_snapshot_id": "d6181a10-19ed-46b1-9076-29522074c97c",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "427106ac-9f5d-4dc7-882b-b35dadb59b20",
+      "charger_id": "CH-003",
+      "timestamp": "2025-09-26T10:32:19Z",
+      "source_health_snapshot_id": "d048ed74-03c0-4e10-a791-9e5f3cb8b0cd",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "6d5e061f-2a94-4de6-8e09-7c89ede6fc42",
+      "charger_id": "CH-004",
+      "timestamp": "2025-09-04T07:05:57Z",
+      "source_health_snapshot_id": "1aa7dfc0-7a39-4801-aa26-402e57440791",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "f7409f18-bbca-4d7f-aeba-1f3dab2ec936",
+      "charger_id": "CH-004",
+      "timestamp": "2025-09-14T07:30:52Z",
+      "source_health_snapshot_id": "e9dbea3c-f4f4-4e47-8de7-af5122cddc6d",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_CONN_01",
+      "status": "closed"
+    },
+    {
+      "id": "73252e8c-cd0f-4bca-bb44-11ca4830bb63",
+      "charger_id": "CH-004",
+      "timestamp": "2025-09-24T10:31:18Z",
+      "source_health_snapshot_id": "e4eb7a6f-052c-46a6-a12b-3af1f58ebb3b",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "f9bf439f-b5b9-4b82-84c0-0c8b726fdcfc",
+      "charger_id": "CH-003",
+      "timestamp": "2025-10-04T10:05:45Z",
+      "source_health_snapshot_id": "4f2a4820-75e0-4966-98a0-e9bdd19f383e",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "36c43bb6-4286-495c-9b61-76972add4927",
+      "charger_id": "CH-003",
+      "timestamp": "2025-10-13T14:42:59Z",
+      "source_health_snapshot_id": "880dadc1-9b62-4ec7-82fd-9f86142a6167",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "93d4d379-5c96-40a0-b913-ddc54278c054",
+      "charger_id": "CH-003",
+      "timestamp": "2025-10-24T14:08:18Z",
+      "source_health_snapshot_id": "75eeaeb2-525b-4736-a8cc-6caadbe96f92",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "092eb85c-a048-4c65-9385-8d6f167ff443",
+      "charger_id": "CH-004",
+      "timestamp": "2025-10-02T14:15:20Z",
+      "source_health_snapshot_id": "08fce66f-1a65-4c08-be4a-16ae449e2421",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "d7fe4d73-4cc6-4010-8160-1b64dceb7cbe",
+      "charger_id": "CH-004",
+      "timestamp": "2025-10-13T14:30:44Z",
+      "source_health_snapshot_id": "0b6bf157-3ee3-4699-8c6c-f6919247cbdd",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "b2320908-c8d7-4f81-a4e6-358a790c54fd",
+      "charger_id": "CH-004",
+      "timestamp": "2025-10-24T10:52:29Z",
+      "source_health_snapshot_id": "2010b0bc-c1b2-4dc6-91e0-fd50bb39db19",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "de27fc1b-60c9-46c1-b308-3a0eb0874fb6",
+      "charger_id": "CH-001",
+      "timestamp": "2025-11-13T10:15:44Z",
+      "source_health_snapshot_id": "c0c7afbb-3e1e-41f8-9ae9-b4f5e367102c",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "c278f7a7-4c49-4021-83cf-962143c94ace",
+      "charger_id": "CH-003",
+      "timestamp": "2025-11-03T19:52:43Z",
+      "source_health_snapshot_id": "8df0cb87-f1e5-4acf-a587-e8a242f3d0b5",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_TEMP_01, missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "295f8f37-2565-4328-8015-535b36e152d2",
+      "charger_id": "CH-003",
+      "timestamp": "2025-11-13T10:18:25Z",
+      "source_health_snapshot_id": "e9fae21d-6a14-4d40-be68-20a2993002dc",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "23c83594-f464-4d14-bf93-fb42b0fe4b48",
+      "charger_id": "CH-003",
+      "timestamp": "2025-11-26T07:36:12Z",
+      "source_health_snapshot_id": "003f9e57-7d9a-4df0-b616-563839a566d3",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "4c2786ba-a655-4860-889c-c51a28b4411b",
+      "charger_id": "CH-004",
+      "timestamp": "2025-11-03T19:31:35Z",
+      "source_health_snapshot_id": "206f23fe-376d-4cc6-bd70-6f7fb3e77fc0",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "48645c47-7bff-477e-8260-b33d99f19991",
+      "charger_id": "CH-004",
+      "timestamp": "2025-11-14T15:00:08Z",
+      "source_health_snapshot_id": "9008028c-09f5-4bf7-bf6f-f37778c40f7b",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "525d3f48-4850-42e9-a370-71d7ec378e3f",
+      "charger_id": "CH-004",
+      "timestamp": "2025-11-25T14:56:04Z",
+      "source_health_snapshot_id": "f1e4d204-e1de-4571-bdd4-ef5ce9dc3199",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "e0e68fae-7b67-437d-a03c-554f055e037c",
+      "charger_id": "CH-003",
+      "timestamp": "2025-12-02T07:29:34Z",
+      "source_health_snapshot_id": "7883d5f8-a255-4d65-a21c-fd86f661e2b7",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "74ce0989-7de3-4176-83d6-7083d93fb994",
+      "charger_id": "CH-003",
+      "timestamp": "2025-12-14T07:15:57Z",
+      "source_health_snapshot_id": "7862349f-4c8b-49d9-8225-125b4c23a63a",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "51fb02c2-ed3b-46b1-8129-cd633d3a62c7",
+      "charger_id": "CH-003",
+      "timestamp": "2025-12-26T07:59:19Z",
+      "source_health_snapshot_id": "cab553c4-960e-4982-8572-5815663edf37",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "f0db84f2-0f15-4343-9f5f-25582a953fbe",
+      "charger_id": "CH-004",
+      "timestamp": "2025-12-04T10:40:51Z",
+      "source_health_snapshot_id": "cfe41986-2296-431e-a4a2-b313c8135c07",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_CONN_01, missing_heartbeat, repeated_connectivity_loss",
+      "status": "open"
+    },
+    {
+      "id": "4a87ac40-894d-4e1b-b896-881502b530a1",
+      "charger_id": "CH-004",
+      "timestamp": "2025-12-14T14:54:31Z",
+      "source_health_snapshot_id": "e1a81583-3663-4f6e-8b33-2797fe1f714b",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "3bf253b2-e13c-4972-9d47-d7d9dfa89863",
+      "charger_id": "CH-004",
+      "timestamp": "2025-12-24T10:56:30Z",
+      "source_health_snapshot_id": "386f8978-7383-448f-a1c6-45a42188eafd",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "d656432f-18ac-4fd7-bc6c-e2b5ad3ebf4a",
+      "charger_id": "CH-003",
+      "timestamp": "2026-01-04T10:37:48Z",
+      "source_health_snapshot_id": "e3dd0831-ac8f-4f3d-8d55-0db7a6ab4cfa",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "3c83455d-e394-4af7-ace8-03b4eacd92e7",
+      "charger_id": "CH-003",
+      "timestamp": "2026-01-13T07:09:13Z",
+      "source_health_snapshot_id": "717db879-b6a2-4d93-8f80-559306be135e",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_POWER_01",
+      "status": "open"
+    },
+    {
+      "id": "e59a06bb-099c-434b-ac53-a619ea0532c1",
+      "charger_id": "CH-003",
+      "timestamp": "2026-01-26T07:28:59Z",
+      "source_health_snapshot_id": "4e2c01cd-8461-4726-b261-2a968dd4fa22",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "56fb3e5d-9c80-4f66-926a-eb0b4cd1e44d",
+      "charger_id": "CH-004",
+      "timestamp": "2026-01-02T07:31:00Z",
+      "source_health_snapshot_id": "ba50fda8-189b-43e6-83d7-2ced50a63b5a",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "8ca50f3d-2302-4116-b699-3d2a64f3182f",
+      "charger_id": "CH-004",
+      "timestamp": "2026-01-14T19:39:26Z",
+      "source_health_snapshot_id": "f076d282-2bef-442d-807e-a650410d69a9",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "28939e5d-3062-4ceb-892b-d0d4969d1f87",
+      "charger_id": "CH-004",
+      "timestamp": "2026-01-25T19:56:49Z",
+      "source_health_snapshot_id": "4e7e9121-e2ec-4461-b69c-8a9de9fb3e60",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "c0d45bd5-fd9e-43da-bd62-30fcff1c8156",
+      "charger_id": "CH-003",
+      "timestamp": "2026-02-02T10:49:06Z",
+      "source_health_snapshot_id": "ae6521bb-a028-4c03-a146-cbbee11d6f1a",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "c85583f1-4048-4ff7-b548-4bc02b54db82",
+      "charger_id": "CH-003",
+      "timestamp": "2026-02-13T14:27:40Z",
+      "source_health_snapshot_id": "b1727ae9-0bde-47d7-950a-becd0831f463",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "876d8222-3675-4257-99d4-e3510f3bc8b1",
+      "charger_id": "CH-003",
+      "timestamp": "2026-02-24T14:19:35Z",
+      "source_health_snapshot_id": "1556f1d7-4e9b-4524-91e6-397541fd22c7",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_offline, error_code:E_POWER_01, missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "f8b6fbf8-aed5-4055-93f9-9859f8244935",
+      "charger_id": "CH-004",
+      "timestamp": "2026-02-03T19:36:45Z",
+      "source_health_snapshot_id": "1c8b81fa-d578-4030-9764-cf97226670f2",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "a9718fc0-fab4-43bf-ad3f-e1bd89470553",
+      "charger_id": "CH-004",
+      "timestamp": "2026-02-13T19:55:55Z",
+      "source_health_snapshot_id": "fdde1c5b-5898-4d27-b60a-b6a6ae745a19",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: error_code:E_CONN_01, missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "262d2ca8-551b-416a-835d-51eee9cd38b4",
+      "charger_id": "CH-004",
+      "timestamp": "2026-02-25T10:11:49Z",
+      "source_health_snapshot_id": "5fbdd8e7-29c2-4ac5-908a-7ad457fd88aa",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: error_code:E_TEMP_02",
+      "status": "open"
+    },
+    {
+      "id": "023b28e9-df1f-4bda-b7a8-583d24b40db4",
+      "charger_id": "CH-003",
+      "timestamp": "2026-03-04T07:41:48Z",
+      "source_health_snapshot_id": "8c3ff5b9-2528-4ce9-8134-d4910d9d4b10",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "ee114b5b-5b9d-4c99-9db7-e1e2603ca268",
+      "charger_id": "CH-003",
+      "timestamp": "2026-03-13T07:43:26Z",
+      "source_health_snapshot_id": "8bd7f4d8-1eed-4181-a2de-af59911c50ad",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "2c05bcfe-8c57-4698-ad85-c7632844da95",
+      "charger_id": "CH-003",
+      "timestamp": "2026-03-26T10:29:03Z",
+      "source_health_snapshot_id": "4f3d9220-c407-4b97-8f83-1d1d03d2b58a",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "51f926cb-3254-48d3-a995-561bb2076214",
+      "charger_id": "CH-004",
+      "timestamp": "2026-03-03T19:49:46Z",
+      "source_health_snapshot_id": "77cc6b97-fa72-4504-ab00-02dce9cd54d1",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "b041a6bf-586e-4506-8f80-3baf50335e03",
+      "charger_id": "CH-004",
+      "timestamp": "2026-03-13T14:06:05Z",
+      "source_health_snapshot_id": "3e6261ea-e80c-43ea-839c-0b8f5ae015c1",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charging_without_power, error_code:E_POWER_01",
+      "status": "open"
+    },
+    {
+      "id": "db1b3533-8ebb-44a1-bdd3-872a64f9191a",
+      "charger_id": "CH-004",
+      "timestamp": "2026-03-24T07:20:56Z",
+      "source_health_snapshot_id": "740adb11-aed6-43f8-afa2-10ee9465395f",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_TEMP_02, missing_heartbeat, repeated_connectivity_loss",
+      "status": "open"
+    },
+    {
+      "id": "a1b3d5ee-eff0-4482-8774-0c37aaa86a2f",
+      "charger_id": "CH-003",
+      "timestamp": "2026-04-03T19:56:57Z",
+      "source_health_snapshot_id": "271107bf-423e-453b-a76c-aa6167325520",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "ba63194d-6897-40e5-8584-246ac7a1d1ad",
+      "charger_id": "CH-003",
+      "timestamp": "2026-04-13T19:38:50Z",
+      "source_health_snapshot_id": "491d59d0-be5f-4669-9257-c20c1a11a589",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "6a4ff14e-4350-4afc-ba3a-92b922c58d7f",
+      "charger_id": "CH-003",
+      "timestamp": "2026-04-24T14:40:03Z",
+      "source_health_snapshot_id": "34ff2322-a31b-4581-a852-6b45ffc0f90a",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "open"
+    },
+    {
+      "id": "c606629b-5ceb-4dce-bf2d-b0ba5969a369",
+      "charger_id": "CH-004",
+      "timestamp": "2026-04-02T07:10:03Z",
+      "source_health_snapshot_id": "1b47e0bf-09af-490f-86d0-a3d9fc87bfd6",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_POWER_01",
+      "status": "open"
+    },
+    {
+      "id": "0734295e-92f6-4c5a-b6ab-0052120952bd",
+      "charger_id": "CH-004",
+      "timestamp": "2026-04-15T10:33:47Z",
+      "source_health_snapshot_id": "5fd5745b-266d-4198-b58b-308e845961a8",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_TEMP_02, missing_heartbeat, repeated_connectivity_loss",
+      "status": "open"
+    },
+    {
+      "id": "9ef715c6-d747-42f9-94e7-4f7cf92468c3",
+      "charger_id": "CH-004",
+      "timestamp": "2026-04-26T14:43:03Z",
+      "source_health_snapshot_id": "9059d226-2fca-47d7-90c8-e3b5bbd70644",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_offline, error_code:E_POWER_01, missing_heartbeat, repeated_connectivity_loss",
+      "status": "open"
+    },
+    {
+      "id": "852d5cec-f8c4-42fc-b74f-c1de9b20d6e5",
+      "charger_id": "CH-003",
+      "timestamp": "2026-05-04T19:20:26Z",
+      "source_health_snapshot_id": "86703c5a-ac2a-4b48-a83c-7686a46e5b26",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "8cb725d3-a2d8-4b68-b4b4-504dfea9634f",
+      "charger_id": "CH-003",
+      "timestamp": "2026-05-14T10:49:04Z",
+      "source_health_snapshot_id": "02d1a363-ba26-4d43-8423-782e12975799",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "d08a2e7a-65af-4c4b-be05-6837c8c61c6b",
+      "charger_id": "CH-003",
+      "timestamp": "2026-05-24T14:59:45Z",
+      "source_health_snapshot_id": "79680bde-b2f9-41ad-90c7-e6052482485e",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues.",
+      "status": "closed"
+    },
+    {
+      "id": "3beae1f6-35e7-45f8-9d6a-15c2bb337b70",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-02T10:38:03Z",
+      "source_health_snapshot_id": "90c3adcc-f331-42b4-9bf6-9678c9f1af9c",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_POWER_01, missing_heartbeat, repeated_connectivity_loss",
+      "status": "open"
+    },
+    {
+      "id": "d68ef46c-c267-415c-9c8a-9a1ba4b129fa",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-14T07:25:28Z",
+      "source_health_snapshot_id": "5e191155-5363-4ffb-a658-131a17d9fc03",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: missing_heartbeat",
+      "status": "open"
+    },
+    {
+      "id": "83f5f843-8438-41d7-898f-41e3eb181544",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-26T19:33:17Z",
+      "source_health_snapshot_id": "b10477a8-a0a7-4ede-af49-089e9d188f96",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Escalate to operations team and inspect charger immediately. Detected anomalies: charger_faulted, error_code:E_CONN_01, missing_heartbeat, repeated_connectivity_loss",
+      "status": "open"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "bbb4379c-6826-4e7d-b9a7-ee6b93c85522",
+      "charger_id": "CH-003",
+      "timestamp": "2025-07-04T07:04:16Z",
+      "source_health_snapshot_id": "8885a095-c7b6-4c8c-9822-37a4a07b88e6",
+      "severity": "medium",
+      "status": "resolved",
+      "title": "Degraded charger health detected for CH-003",
+      "description": "Preventive maintenance review recommended.",
+      "resolved_at": "2025-07-06T10:03:00Z"
+    },
+    {
+      "id": "fa9063b4-af74-4e5c-93ba-b4810ce7f336",
+      "charger_id": "CH-003",
+      "timestamp": "2025-11-03T19:53:48Z",
+      "source_health_snapshot_id": "8df0cb87-f1e5-4acf-a587-e8a242f3d0b5",
+      "severity": "high",
+      "status": "resolved",
+      "title": "Critical charger health detected for CH-003",
+      "description": "Immediate inspection recommended.",
+      "resolved_at": "2025-11-06T05:52:00Z"
+    },
+    {
+      "id": "1f3fb9a2-83a7-4491-a363-b033a810c171",
+      "charger_id": "CH-004",
+      "timestamp": "2025-11-14T15:00:24Z",
+      "source_health_snapshot_id": "9008028c-09f5-4bf7-bf6f-f37778c40f7b",
+      "severity": "high",
+      "status": "resolved",
+      "title": "Critical charger health detected for CH-004",
+      "description": "Immediate inspection recommended.",
+      "resolved_at": "2025-11-17T13:59:00Z"
+    },
+    {
+      "id": "8776cac0-c8ae-4306-a2c1-c2e4fd627450",
+      "charger_id": "CH-003",
+      "timestamp": "2026-01-13T07:09:32Z",
+      "source_health_snapshot_id": "717db879-b6a2-4d93-8f80-559306be135e",
+      "severity": "high",
+      "status": "resolved",
+      "title": "Critical charger health detected for CH-003",
+      "description": "Immediate inspection recommended.",
+      "resolved_at": "2026-01-15T07:08:00Z"
+    },
+    {
+      "id": "82acf6ec-35c5-42cc-90cd-9ca8c8c5ade2",
+      "charger_id": "CH-004",
+      "timestamp": "2026-01-02T07:31:45Z",
+      "source_health_snapshot_id": "ba50fda8-189b-43e6-83d7-2ced50a63b5a",
+      "severity": "medium",
+      "status": "resolved",
+      "title": "Degraded charger health detected for CH-004",
+      "description": "Preventive maintenance review recommended.",
+      "resolved_at": "2026-01-05T07:30:00Z"
+    },
+    {
+      "id": "7b534058-4c01-451e-a633-33c6fd915b53",
+      "charger_id": "CH-003",
+      "timestamp": "2026-02-24T14:19:55Z",
+      "source_health_snapshot_id": "1556f1d7-4e9b-4524-91e6-397541fd22c7",
+      "severity": "high",
+      "status": "resolved",
+      "title": "Critical charger health detected for CH-003",
+      "description": "Immediate inspection recommended.",
+      "resolved_at": "2026-02-25T01:18:00Z"
+    },
+    {
+      "id": "13fac957-e813-460c-b425-3cebf02bbef6",
+      "charger_id": "CH-004",
+      "timestamp": "2026-02-03T19:37:33Z",
+      "source_health_snapshot_id": "1c8b81fa-d578-4030-9764-cf97226670f2",
+      "severity": "medium",
+      "status": "resolved",
+      "title": "Degraded charger health detected for CH-004",
+      "description": "Preventive maintenance review recommended.",
+      "resolved_at": "2026-02-06T00:36:00Z"
+    },
+    {
+      "id": "c6b60a99-7a62-4d88-9eca-6b4fcd222c3a",
+      "charger_id": "CH-004",
+      "timestamp": "2026-03-13T14:06:23Z",
+      "source_health_snapshot_id": "3e6261ea-e80c-43ea-839c-0b8f5ae015c1",
+      "severity": "high",
+      "status": "open",
+      "title": "Critical charger health detected for CH-004",
+      "description": "Immediate inspection recommended.",
+      "resolved_at": null
+    },
+    {
+      "id": "127a6a0c-db4b-4dfd-80d5-da6f88f9fbcd",
+      "charger_id": "CH-004",
+      "timestamp": "2026-04-15T10:34:05Z",
+      "source_health_snapshot_id": "5fd5745b-266d-4198-b58b-308e845961a8",
+      "severity": "high",
+      "status": "resolved",
+      "title": "Critical charger health detected for CH-004",
+      "description": "Immediate inspection recommended.",
+      "resolved_at": "2026-04-17T20:33:00Z"
+    },
+    {
+      "id": "a7fc2af5-d809-460a-a9cc-19700ac03605",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-02T10:38:35Z",
+      "source_health_snapshot_id": "90c3adcc-f331-42b4-9bf6-9678c9f1af9c",
+      "severity": "high",
+      "status": "resolved",
+      "title": "Critical charger health detected for CH-004",
+      "description": "Immediate inspection recommended.",
+      "resolved_at": "2026-05-04T10:37:00Z"
+    }
+  ]
+}

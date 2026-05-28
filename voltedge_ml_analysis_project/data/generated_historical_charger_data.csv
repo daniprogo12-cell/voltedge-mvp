@@ -1,0 +1,5 @@
+month,charger_id,telemetry_count,avg_health_score,error_count,offline_events,missing_heartbeat_count,avg_power_kw,anomaly_count,previous_incidents,incident_count_next_30_days
+2026-05-01,CH-001,1,100.0,0,0,0,0.0,0,0,0
+2026-05-01,CH-002,1,100.0,0,0,0,11.2,0,0,0
+2026-05-01,CH-003,1,65.0,1,0,0,0.0,1,0,0
+2026-05-01,CH-004,3,6.67,3,2,3,0.0,4,0,0

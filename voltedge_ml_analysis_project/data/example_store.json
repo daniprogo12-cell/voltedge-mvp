@@ -1,0 +1,263 @@
+{
+  "telemetry_readings": [
+    {
+      "charger_id": "CH-001",
+      "timestamp": "2026-05-19T16:49:20.864990Z",
+      "status": "available",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": null,
+      "heartbeat": true,
+      "connector_id": "1",
+      "id": "0e5c01ef-366a-407b-b045-5532500a7e32"
+    },
+    {
+      "charger_id": "CH-002",
+      "timestamp": "2026-05-19T16:49:20.865011Z",
+      "status": "charging",
+      "power_kw": 11.2,
+      "voltage": null,
+      "current": null,
+      "error_code": null,
+      "heartbeat": true,
+      "connector_id": "1",
+      "id": "23b138c4-90b4-453f-b1b6-4a75f085c5ea"
+    },
+    {
+      "charger_id": "CH-003",
+      "timestamp": "2026-05-19T16:49:20.865016Z",
+      "status": "charging",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": "E_POWER_01",
+      "heartbeat": true,
+      "connector_id": "1",
+      "id": "61a3a085-bb93-4184-98eb-1f96930aa72e"
+    },
+    {
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.865023Z",
+      "status": "offline",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": "E_CONN_01",
+      "heartbeat": false,
+      "connector_id": "1",
+      "id": "d3c19963-8e0d-415e-856d-150befea8737"
+    },
+    {
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.865027Z",
+      "status": "offline",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": "E_CONN_01",
+      "heartbeat": false,
+      "connector_id": "1",
+      "id": "39427d0b-414a-469f-a251-8f576f8f6bdd"
+    },
+    {
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.865030Z",
+      "status": "faulted",
+      "power_kw": 0.0,
+      "voltage": null,
+      "current": null,
+      "error_code": "E_CONN_01",
+      "heartbeat": false,
+      "connector_id": "1",
+      "id": "df9551f3-1349-405d-92e1-90a1f9fbd81c"
+    }
+  ],
+  "health_snapshots": [
+    {
+      "id": "d2d67227-ba88-4826-aa4c-52bf9f1d3e68",
+      "charger_id": "CH-001",
+      "timestamp": "2026-05-19T16:49:20.872469Z",
+      "source_telemetry_id": "0e5c01ef-366a-407b-b045-5532500a7e32",
+      "health_score": 100,
+      "health_status": "healthy",
+      "risk_level": "low",
+      "fault_indicators": [],
+      "recommendation_text": "No immediate action required."
+    },
+    {
+      "id": "1afefe69-98ec-40bd-8a44-1f84aeaf1a61",
+      "charger_id": "CH-002",
+      "timestamp": "2026-05-19T16:49:20.885845Z",
+      "source_telemetry_id": "23b138c4-90b4-453f-b1b6-4a75f085c5ea",
+      "health_score": 100,
+      "health_status": "healthy",
+      "risk_level": "low",
+      "fault_indicators": [],
+      "recommendation_text": "No immediate action required."
+    },
+    {
+      "id": "3b1aa13a-6545-45a7-93aa-6dedc923c2fd",
+      "charger_id": "CH-003",
+      "timestamp": "2026-05-19T16:49:20.899832Z",
+      "source_telemetry_id": "61a3a085-bb93-4184-98eb-1f96930aa72e",
+      "health_score": 65,
+      "health_status": "degraded",
+      "risk_level": "medium",
+      "fault_indicators": [
+        "error_code:E_POWER_01",
+        "charging_without_power"
+      ],
+      "recommendation_text": "Monitor charger and schedule preventive maintenance if pattern continues."
+    },
+    {
+      "id": "846f6c34-6bbf-465c-b891-9bcd654a46c4",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.929325Z",
+      "source_telemetry_id": "d3c19963-8e0d-415e-856d-150befea8737",
+      "health_score": 10,
+      "health_status": "critical",
+      "risk_level": "high",
+      "fault_indicators": [
+        "missing_heartbeat",
+        "charger_offline",
+        "error_code:E_CONN_01"
+      ],
+      "recommendation_text": "Check network connection and charger heartbeat immediately."
+    },
+    {
+      "id": "88835540-7e99-4e0f-a786-87fe2b98b02d",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.966900Z",
+      "source_telemetry_id": "39427d0b-414a-469f-a251-8f576f8f6bdd",
+      "health_score": 10,
+      "health_status": "critical",
+      "risk_level": "high",
+      "fault_indicators": [
+        "missing_heartbeat",
+        "charger_offline",
+        "error_code:E_CONN_01"
+      ],
+      "recommendation_text": "Check network connection and charger heartbeat immediately."
+    },
+    {
+      "id": "15c12698-f736-47a3-b4c9-295432c59f80",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.999661Z",
+      "source_telemetry_id": "df9551f3-1349-405d-92e1-90a1f9fbd81c",
+      "health_score": 0,
+      "health_status": "critical",
+      "risk_level": "high",
+      "fault_indicators": [
+        "missing_heartbeat",
+        "charger_faulted",
+        "error_code:E_CONN_01",
+        "repeated_error_code",
+        "repeated_connectivity_loss"
+      ],
+      "recommendation_text": "Check network connection and charger heartbeat immediately."
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "90423e38-87da-46a1-8dd3-0c88f64c4f3e",
+      "charger_id": "CH-003",
+      "timestamp": "2026-05-19T16:49:20.901317Z",
+      "source_telemetry_id": "61a3a085-bb93-4184-98eb-1f96930aa72e",
+      "anomaly_type": "charging_without_power",
+      "severity": "medium",
+      "description": "Charger reports charging, but power is close to zero."
+    },
+    {
+      "id": "99232f33-af70-4ca4-bcb0-7142e6d92108",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.930964Z",
+      "source_telemetry_id": "d3c19963-8e0d-415e-856d-150befea8737",
+      "anomaly_type": "heartbeat_missing",
+      "severity": "high",
+      "description": "Charger did not send heartbeat in latest telemetry reading."
+    },
+    {
+      "id": "e35f9110-3c7f-4808-a310-f4916a5fe613",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.968501Z",
+      "source_telemetry_id": "39427d0b-414a-469f-a251-8f576f8f6bdd",
+      "anomaly_type": "heartbeat_missing",
+      "severity": "high",
+      "description": "Charger did not send heartbeat in latest telemetry reading."
+    },
+    {
+      "id": "66e377c5-8ff2-4049-bc95-23b51d98c2e3",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:21.001350Z",
+      "source_telemetry_id": "df9551f3-1349-405d-92e1-90a1f9fbd81c",
+      "anomaly_type": "heartbeat_missing",
+      "severity": "high",
+      "description": "Charger did not send heartbeat in latest telemetry reading."
+    },
+    {
+      "id": "570945b8-d3b4-4c61-bf0f-153db65e47ca",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:21.001368Z",
+      "source_telemetry_id": "df9551f3-1349-405d-92e1-90a1f9fbd81c",
+      "anomaly_type": "repeated_error_code",
+      "severity": "high",
+      "description": "Error code E_CONN_01 occurred 3 times in the latest readings."
+    }
+  ],
+  "maintenance_recommendations": [
+    {
+      "id": "43541f53-c810-46d3-b52a-77019d896cda",
+      "charger_id": "CH-003",
+      "timestamp": "2026-05-19T16:49:20.908559Z",
+      "source_health_snapshot_id": "3b1aa13a-6545-45a7-93aa-6dedc923c2fd",
+      "risk_level": "medium",
+      "action": "Schedule preventive maintenance review",
+      "reason": "Monitor charger and schedule preventive maintenance if pattern continues. Detected anomalies: charging_without_power",
+      "status": "open"
+    },
+    {
+      "id": "0264c344-4d23-43bb-8aca-dcd71b7a134a",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.938536Z",
+      "source_health_snapshot_id": "846f6c34-6bbf-465c-b891-9bcd654a46c4",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Check network connection and charger heartbeat immediately. Detected anomalies: heartbeat_missing",
+      "status": "open"
+    },
+    {
+      "id": "c95cdff5-a413-4a78-979f-c785dd69c6c8",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.976391Z",
+      "source_health_snapshot_id": "88835540-7e99-4e0f-a786-87fe2b98b02d",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Check network connection and charger heartbeat immediately. Detected anomalies: heartbeat_missing",
+      "status": "open"
+    },
+    {
+      "id": "30972550-4803-490e-8c4e-58a9320b8626",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:21.017994Z",
+      "source_health_snapshot_id": "15c12698-f736-47a3-b4c9-295432c59f80",
+      "risk_level": "high",
+      "action": "Escalate to operations team",
+      "reason": "Check network connection and charger heartbeat immediately. Detected anomalies: heartbeat_missing, repeated_error_code",
+      "status": "open"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "61833550-da09-4fe4-8a26-a26f1039645b",
+      "charger_id": "CH-004",
+      "timestamp": "2026-05-19T16:49:20.952397Z",
+      "source_health_snapshot_id": "846f6c34-6bbf-465c-b891-9bcd654a46c4",
+      "severity": "high",
+      "status": "open",
+      "title": "Critical charger health detected for CH-004",
+      "description": "Check network connection and charger heartbeat immediately.",
+      "resolved_at": null
+    }
+  ]
+}
